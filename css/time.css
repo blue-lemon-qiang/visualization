@@ -1,0 +1,19 @@
+.date-info {
+    float: right;
+    padding-right: 30px;
+}
+
+.date-info>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.date-info .date-info__left {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.date-info .date-info__right {
+    font-size: 20px;
+    line-height: 1.5em;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ZH-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入 iView css -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/iview/3.5.4/styles/iview.css" rel="stylesheet">
+    <!-- 引入 time组件 css -->
+    <link rel="stylesheet" href="./css/time.css">
+    <!-- 引入 当前页面 css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/slideshow.css"> -->
+</head>
+
+<body>
+    <div id="app">
+        <dv-full-screen-container>
+            <dv-border-box-7>
+                <row>
+                    <i-col span="8">
+                        <div style="height:8vh;"></div>
+                    </i-col>
+                    <i-col span="8">
+                        <row>
+                            <i-col span="24">
+                                <h1 style="text-align: center; color: honeydew;font-size: 23px;">保安服务集团</h1>
+                            </i-col>
+                        </row>
+                        <row>
+                            <i-col span="24">
+                                <dv-decoration-5 style="height: 6vh;" />
+                            </i-col>
+                        </row>
+                    </i-col>
+                    <i-col span="8">
+                        <div style="height: 10vh;">
+                            <date-time :styleobj="{color:'#09e0e9','font-size':'48px'}"></date-time>
+                        </div>
+                    </i-col>
+                </row>
+                <!-- <row>
+                    <i-col span="18">
+                        <div style="height: 10vh;width: 60vw;position: relative;">
+                            <div style="position: absolute;left: 30vw;text-align: center;">
+                                <h1>中戎卫保安服务集团</h1>
+                                <dv-decoration-5 style="width:30vw;height:5vh;" />
+                            </div>  
+                        </div>
+                    </i-col>
+                    <i-col span="18">
+                        <div style="height: 10vh;margin-top: 15px;">
+                            <div class="icon">
+                                <div class="img img-1">
+                                    <img src="./img/首页.png" alt="">
+                                    <p>企业简介</p>
+                                </div>
+                                <div class="img img-2">
+                                    <img src="./img/盾牌.png" alt="">
+                                    <p>业务范围</p>
+                                </div>
+                                <div class="img img-3">
+                                    <img src="./img/ic-flow-chart.png" alt="">
+                                    <p>公司架构</p>
+                                </div>
+                                <div class="img img-4">
+                                    <img src="./img/勋章.png" alt="">
+                                    <p>公司资质</p>
+                                </div>
+                            </div>
+                        </div>
+                    </i-col>
+                    <i-col span="6">
+                        <div style="height: 10vh;">
+                            <date-time :styleobj="{color:'#09e0e9','font-size':'48px'}"></date-time>
+                        </div>
+                    </i-col>
+                </row> -->
+                <row>
+                    <i-col span="18">
+                        <div style="height: 85vh;">
+                            <row>
+                                <i-col span="6">
+                                    <div class="title">
+                                        <span class="span">784</span><span>家</span>&nbsp;
+                                        <p>入住企业</p>
+                                    </div>
+                                </i-col>
+                                <i-col span="6">
+                                    <div class="title">
+                                        <span class="span">3000</span><span>余人</span>
+                                        <p>企业人数</p>
+                                    </div>
+                                </i-col>
+                                <i-col span="6">
+                                    <div class="title">
+                                        <span class="span">10000</span><span>万元</span>
+                                        <p>总注册资本</p>
+                                    </div>
+                                </i-col>
+                                <i-col span="6">
+                                    <div class="title">
+                                        <span class="span">784</span><span>万元</span>
+                                        <p>纳税额</p>
+                                    </div>
+                                </i-col>
+                            </row>
+                            <row>
+                                <i-col span="10">
+                                    <dv-border-box-12 style="height: 37vh;">
+                                        <dv-charts :option="option" />
+                                    </dv-border-box-12>
+                                    <!-- <div style="background-color: rgb(96, 172, 244);height: 36vh;"></div> -->
+                                </i-col>
+                                <i-col span="14">
+                                    <dv-border-box-13 style="height: 37vh;width: 41vw;">
+                                        <Carousel autoplay v-model="value0" loop autoplay-speed="4000">
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/1.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/2.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/3.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/4.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/5.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                            <Carousel-Item>
+                                                <div class="demo"><img src="./img/6.jpg" alt=""></div>
+                                            </Carousel-Item>
+                                        </Carousel>
+                                    </dv-border-box-13>
+                                    <!-- <div style="background-color: rgb(244, 96, 244);height: 36vh;"></div> -->
+                                </i-col>
+                            </row>
+                            <row>
+                                <i-col span="10">
+                                    <div style="height: 5vh;width: 30vw;line-height: 5vh;font-size: 15px;background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3)); margin-bottom: 5px;
+                                    ">产业服务</div>
+                                    <dv-border-box-12 style="height: 34vh;">
+                                        <div id="tree" style="height: 30vh;"></div>
+                                    </dv-border-box-12>
+                                    <!-- <div style="background-color: rgb(54, 134, 90);height: 39vh;"></div> -->
+                                </i-col>
+                                <i-col span="14">
+                                    <div style="height: 5vh;width: 41vw;line-height: 5vh;font-size: 15px;background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3)); margin-bottom: 5px;
+                                    ">地图统计</div>
+                                    <row>
+                                        <i-col span="12">
+                                            <div id="main" style="width: 19vw;height: 33vh;"></div>
+                                        </i-col>
+                                        <i-col span="12">
+                                            <dv-charts :option="mapOption" style="height: 25vh;margin-top: 5vh;"/>
+                                        </i-col>
+                                    </row>
+                                </i-col>
+                            </row>
+                        </div>
+                    </i-col>
+                    <i-col span="6">
+                        <div style="height: 85vh;">
+                            <row>
+                                <i-col span="24">
+                                    <div style="height: 28vh;">
+                                        <div style="height: 5vh;line-height: 5vh;font-size: 15px;background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3)); margin-bottom: 5px;
+                                        ">安保业务范围</div>
+                                        <div style="height: 22vh;border: 1px rgb(82, 200, 230) solid;background: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3));">
+                                            <div style="border-radius: 100%;background-color: rgb(197, 140, 119);position: absolute;left: 80px;top: 18vh;color: white;line-height: 70px;font-size: 17px;">人防常规安保</div>
+                                            <div style="border-radius: 100%;background-color: rgb(83, 201, 216);position: absolute;left: 200px;top: 8vh;color: white;line-height: 70px;font-size: 17px;">临时勤务安保</div>
+                                            <div style="border-radius: 100%;background-color: rgb(182, 84, 212);position: absolute;left: 40px;top: 10vh;color: white;line-height: 50px;font-size: 17px;">应急处置</div>
+                                            <div style="border-radius: 100%;background-color: rgb(36, 156, 66);position: absolute;left: 280px;top: 20vh;color: white;line-height: 50px;font-size: 17px;">执法协勤</div>
+                                        </div>
+                                    </div>
+                                </i-col>
+                            </row>
+                            <row>
+                                <i-col span="24">
+                                    <div style="height: 28vh;">
+                                        <div
+                                            style="height: 5vh;line-height: 5vh;font-size: 15px;background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3));margin: 5px 0;">
+                                            公司架构</div>
+                                        <div style="position: relative;;height: 22vh;border: 1px rgb(82, 200, 230) solid;">
+                                            <div class="system system-1">总经理</div>
+                                            <div class="system system-2" style="left: 16%;">副总经理</div>
+                                            <div class="system system-2" style="left: 58%;">副总经理</div>
+                                            <div class="system system-3" style="">运营<br>管理中心</div>
+                                            <div class="system system-3" style="left: 17%;">项目<br>管理中心</div>
+                                            <div class="system system-3" style="left: 34%;">财务<br>管理中心</div>
+                                            <div class="system system-3" style="left: 51%;">后勤<br>管理中心</div>
+                                            <div class="system system-3" style="left: 68%;">行政<br>管理中心</div>
+                                            <div class="system system-3" style="left: 85%;">临勤<br>管理中心</div>
+                                        </div>
+                                    </div>
+                                </i-col>
+                            </row>
+                            <row>
+                                <i-col span="24">
+                                    <div style="height: 28vh;">
+                                        <div
+                                            style="height: 5vh;line-height: 5vh;font-size: 15px;background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3));margin: 5px 0;">
+                                            荣誉资质</div>
+                                        <div style="height: 23vh;">
+                                            <!-- <div style="text-align: center;">
+                                                <ul id="ul">
+                                                    <li><a href="###"><img id="middle_img" src="img/1.jpg" style="height: 23vh;"/></a> </li>
+                                                </ul>
+                                            </div> -->
+                                            <!-- <div id="banner">
+                                                <div id="content">
+                                                    <ul id="ul">
+                                                        <li><a href="###"><img src="img/勋章.png" /></a> </li>
+                                                        <li><a href="###"><img src="img/盾牌.png" /></a> </li>
+                                                        <li><a href="###"><img src="img/首页.png" /></a> </li>
+                                                    </ul>
+                                                    <div class=" dot" id="dot">
+                                                        <ul id="dotul">
+                                                            <li></li>
+                                                            <li></li>
+                                                            <li></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div id="btn">
+                                                    <div id="left" class="b"><img src="img/prev.png" /></div>
+                                                    <div id="right" class="b"><img src="img/next.png" /></div>
+                                                </div>
+                                            </div> -->
+                                            <Carousel autoplay v-model="value" loop autoplay-speed="2500">
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/01.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/02.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/03.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/04.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/05.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                                <Carousel-Item>
+                                                    <div class="demo-carousel"><img src="./img/06.jpg" alt=""></div>
+                                                </Carousel-Item>
+                                            </Carousel>
+                                        </div>
+                                    </div>
+                                </i-col>
+                            </row>
+                        </div>
+                    </i-col>
+                </row>
+    </div>
+    </i-col>
+    </row>
+    </dv-border-box-7>
+    </dv-full-screen-container>
+    <!-- 引入 Vue js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <!-- 引入 iView js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/iview/3.5.4/iview.min.js"></script>
+    <!-- 引入 axios js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- 引入 Vue dataV js  -->
+    <!-- <script src="https://unpkg.com/@jiaminghi/data-view/dist/datav.min.vue.js"></script> -->
+    <script src="./js/datav.min.vue.js"></script>
+
+    <!-- 引入 moment js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <!-- 引入 time组件 js -->
+    <script src="./js/time.js"></script>
+    <!-- 引入echarts库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.js"></script>
+    <!-- 引入 当前页面 js -->
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/tree.js"></script>
+</body>
+
+</html>

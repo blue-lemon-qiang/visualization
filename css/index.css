@@ -1,0 +1,94 @@
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #282c34;
+    background-image: url(../img/background.png);
+    background-size:100% 100%;
+}
+
+.border-box-content {
+    color: #09e0e9;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 24px;
+}
+/* .icon{
+    width: 60vw;
+    position: relative;
+    text-align: center;
+}
+.img{
+    position: absolute;
+    width: 5vw;
+}
+.img-2{
+    left: 8vw;
+}
+.img-3{
+    left: 16vw;
+}
+.img-4{
+    left: 24vw;
+}
+.img img{
+    height: 5vh;
+} */
+.title{
+    height: 10vh;
+    width: 15vw;
+    border:1px rgb(82, 200, 230) solid;
+    background: linear-gradient(to right, rgba(5, 5, 5, 0), rgb(0, 255, 255,0.3));
+    margin-left: 10px;
+    padding: 10px;
+}
+.title .span{
+    color: #fbce1a;
+    font-size: 25px;
+}
+.system{
+    position: absolute;
+    height: 4vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+.system-1{
+    left: 38%;
+    top: 1vh;
+    width: 24%;
+    background-color:rgb(143, 56, 56) ;
+    /* background: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(212, 173, 158)); */
+}
+.system-2{
+    top: 7vh;
+    width: 26%;
+    background-color:rgb(15, 106, 129) ;
+    /* background: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(157, 220, 228)); */
+}
+.system-3{
+    top: 13vh;
+    height: 7vh;
+    width: 15%;
+    font-size: 13px;
+    background-color: rgb(124, 86, 136);
+    /* background: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(204, 160, 218)); */
+}
+.demo-carousel{
+    text-align: center;
+}
+.demo-carousel img{
+    height: 23vh;
+}
+.demo{
+    text-align: center;
+}
+.demo img{
+    height: 33vh;
+}
